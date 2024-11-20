@@ -22,7 +22,7 @@ ul {
 }
 
 /* Header Styles */
-header {
+.header-main {
   background-color: #ffffff;
   height: 72px;
   display: flex;
