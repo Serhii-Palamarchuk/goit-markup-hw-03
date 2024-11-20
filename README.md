@@ -1,2 +1,3 @@
 # goit-markup-hw-03
-Блокова модель. Flexbox
+
+Модуль 3. Блокова модель. Flexbox

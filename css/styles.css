@@ -1,0 +1,341 @@
+/* CSS файл для оформлення сайту WebStudio */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+/* Відміна дефолтного підкреслення для посилань та маркерів у списках */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+nav {
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d5ae5;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.studio-link:hover,
+.studio-link:focus {
+  color: #404bbf;
+}
+
+.logo .studio {
+  color: inherit;
+  font-weight: inherit;
+  margin: 0; /* Відсутність зайвих відступів */
+}
+
+.logo .studio {
+  color: #2e2f42; /* Темно-сірий колір для "STUDIO" */
+}
+
+/* Стилі для меню навігації */
+nav ul {
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  color: #404bbf; /* Колір при наведенні або фокусі */
+}
+
+nav a {
+  color: #2e2f42; /* NAVY BLUE */
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em; /* Відповідає 2% */
+  text-decoration: none;
+}
+
+address ul a:hover,
+address ul a:focus {
+  color: #404bbf; /* Колір при наведенні або фокусі */
+}
+
+header .contacts {
+  justify-content: flex-end; /* Вирівнює елементи по правому краю */
+  font-style: normal;
+}
+
+header .contacts ul {
+  list-style: none;
+  margin: 0;
+}
+
+.contact-link {
+  color: #434455; /* SLATE */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em; /* Відповідає 2% */
+  text-decoration: none;
+  font-style: normal; /* Прибираємо італік */
+}
+
+header .contacts ul li {
+  margin-right: 10px; /* Додає проміжок між email та номером */
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #2e2f42; /* Колір для фону, відповідно до макету */
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: #ffffff;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  background-color: #4d5ae5; /* IRIS */
+  color: #ffffff;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* Features Section Styles */
+.features {
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.features h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.features ul {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+.features li p {
+  margin: 0; /* Прибираємо зайві відступи */
+  line-height: 1.5; /* Робимо текст більш компактним */
+  text-align: left; /* Вирівнюємо текст по лівому краю */
+}
+
+.features-p {
+  letter-spacing: 0.02em;
+}
+
+.features li:hover {
+  transform: translateY(-5px);
+}
+
+.features-h {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  text-align: left; /* Вирівнюємо текст по лівому краю */
+  color: #2e2f42;
+}
+
+.features p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #434455;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left; /* Вирівнюємо текст по лівому краю */
+}
+
+/* Team Section Styles */
+.team {
+  text-align: center;
+  background-color: #f4f4fd;
+}
+
+.team-h {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px; /* Розмір шрифту, зазначений у макеті */
+  line-height: 1.11; /* Лінійна висота */
+  letter-spacing: 0.02em; /* Відповідає 2% */
+  color: #2e2f42; /* Колір, відповідно до макету */
+  text-align: center; /* Вирівнювання по центру */
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.team ul {
+  justify-content: center; /* Вирівнюємо картки по центру */
+  margin: 0 auto;
+}
+
+.team-li {
+  text-align: center;
+  background-color: #ffffff;
+  justify-content: space-between; /* Забезпечує рівномірний розподіл простору */
+}
+
+.team-li:hover {
+  transform: translateY(-5px);
+}
+
+.team img {
+  margin-bottom: 15px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px; /* Корегуємо розмір шрифту для відповідності макету */
+  margin-bottom: 10px;
+  color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.team-p {
+  font-size: 16px; /* Вирівнюємо розмір шрифту під макет */
+  font-weight: 400;
+  color: #434455; /* Колір тексту */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.portfolio-h {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px; /* Розмір шрифту, зазначений у макеті */
+  line-height: 1.11;
+  color: #2e2f42; /* Колір, відповідно до макету */
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.portfolio ul {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  margin: 0 auto;
+}
+
+.portfolio li {
+}
+
+.portfolio-label {
+  border-style: solid;
+  border-color: #e7e9fc;
+}
+
+.portfolio-name {
+  font-weight: 500;
+  font-size: 20px; /* Корегуємо розмір шрифту для відповідності макету */
+  margin-bottom: 10px;
+  color: #2e2f42; /* Колір заголовку */
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-p {
+  font-size: 16px; /* Вирівнюємо розмір шрифту під макет */
+  font-weight: 500;
+  color: #434455; /* Колір тексту */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio li:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio img {
+}
+
+/* Footer Section Styles */
+.footer {
+  background-color: #2e2f42;
+  color: #ffffff;
+  text-align: left;
+}
+
+footer a.logo-footer {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+  text-align: left;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.logo-footer .web {
+  color: #4d5ae5; /* Синій колір для "WEB" */
+}
+
+.logo-footer .studio {
+  color: #f4f4fd;
+}
+
+.footer-p {
+  line-height: 1.5;
+  text-align: left;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+}
+
+button {
+  cursor: pointer;
+}
