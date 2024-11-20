@@ -1,5 +1,3 @@
-/* CSS файл для оформлення сайту WebStudio */
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -18,10 +16,22 @@ ul {
 /* Header Styles */
 header {
   background-color: #ffffff;
+  height: 72px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 156px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  /* Високий пріоритет для накладання */
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo {
@@ -40,9 +50,12 @@ nav {
 }
 
 .logo .studio {
+  display: inline;
+  /* Зробити елементи одним рядком */
   color: inherit;
   font-weight: inherit;
   margin: 0; /* Відсутність зайвих відступів */
+  padding: 0;
 }
 
 .logo .studio {
@@ -51,6 +64,9 @@ nav {
 
 /* Стилі для меню навігації */
 nav ul {
+  display: flex;
+  gap: 40px;
+  /* Відступи між елементами меню */
 }
 
 nav ul a:hover,
@@ -74,13 +90,18 @@ address ul a:focus {
 }
 
 header .contacts {
+  display: flex;
+  align-items: center; /* Вирівнює по вертикалі */
   justify-content: flex-end; /* Вирівнює елементи по правому краю */
   font-style: normal;
 }
 
 header .contacts ul {
+  display: flex;
+  gap: 20px; /* Відступ між контактами */
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .contact-link {
@@ -95,12 +116,18 @@ header .contacts ul {
 }
 
 header .contacts ul li {
+  display: inline;
   margin-right: 10px; /* Додає проміжок між email та номером */
 }
 
 /* Hero Section Styles */
 .hero {
+  height: 600px;
+  margin-top: 72px; /* Відступ після фіксованого хедера */
   background-color: #2e2f42; /* Колір для фону, відповідно до макету */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   color: #ffffff;
@@ -119,11 +146,15 @@ header .contacts ul li {
   background-color: #4d5ae5; /* IRIS */
   color: #ffffff;
   border: none;
+  width: 169px;
+  height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px; /* Радіус */
   text-align: center;
   letter-spacing: 0.04em;
 }
@@ -135,6 +166,7 @@ header .contacts ul li {
 
 /* Features Section Styles */
 .features {
+  padding: 60px 20px;
   text-align: center;
   background-color: #f8f9fa;
 }
@@ -147,12 +179,17 @@ header .contacts ul li {
 }
 
 .features ul {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1128px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .features li p {
   margin: 0; /* Прибираємо зайві відступи */
+  padding: 0; /* Прибираємо зайві внутрішні відступи */
   line-height: 1.5; /* Робимо текст більш компактним */
   text-align: left; /* Вирівнюємо текст по лівому краю */
 }
@@ -188,6 +225,7 @@ header .contacts ul li {
 
 /* Team Section Styles */
 .team {
+  padding: 60px 20px;
   text-align: center;
   background-color: #f4f4fd;
 }
@@ -205,14 +243,25 @@ header .contacts ul li {
 }
 
 .team ul {
+  display: flex; /* Використовуємо flex для вирівнювання карток в лінію */
+  gap: 32px;
   justify-content: center; /* Вирівнюємо картки по центру */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .team-li {
   text-align: center;
   background-color: #ffffff;
+  width: 264px;
+  height: 380px; /* Фіксована висота для однакового вигляду */
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 4px 4px;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between; /* Забезпечує рівномірний розподіл простору */
+  gap: 15px; /* Додаємо відступ між зображенням і текстом */
 }
 
 .team-li:hover {
@@ -220,7 +269,13 @@ header .contacts ul li {
 }
 
 .team img {
+  width: 264px;
+  height: 260px;
+  /* Встановлюємо однакову висоту для зображень */
+
+  border-radius: 0px 0px 4px 4px;
   margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .team-name {
@@ -236,12 +291,14 @@ header .contacts ul li {
   font-size: 16px; /* Вирівнюємо розмір шрифту під макет */
   font-weight: 400;
   color: #434455; /* Колір тексту */
+  margin-top: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 /* Portfolio Section Styles */
 .portfolio {
+  padding: 60px 20px 40px 20px;
   text-align: left;
   background-color: #ffffff;
 }
@@ -258,16 +315,26 @@ header .contacts ul li {
 }
 
 .portfolio ul {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .portfolio li {
+  width: 360px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-label {
+  border-width: 0px, 1px, 1px, 1px;
   border-style: solid;
   border-color: #e7e9fc;
+  border-top: 0px;
+  width: 360px;
 }
 
 .portfolio-name {
@@ -275,6 +342,8 @@ header .contacts ul li {
   font-size: 20px; /* Корегуємо розмір шрифту для відповідності макету */
   margin-bottom: 10px;
   color: #2e2f42; /* Колір заголовку */
+  padding-left: 20px;
+  padding-top: 15px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
@@ -283,6 +352,8 @@ header .contacts ul li {
   font-size: 16px; /* Вирівнюємо розмір шрифту під макет */
   font-weight: 500;
   color: #434455; /* Колір тексту */
+  margin-top: 0;
+  padding-left: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -292,13 +363,19 @@ header .contacts ul li {
 }
 
 .portfolio img {
+  width: 360px;
+  height: 300px;
+  /* Встановлюємо однакову висоту для зображень */
 }
 
 /* Footer Section Styles */
 .footer {
   background-color: #2e2f42;
   color: #ffffff;
+  padding: 112px 20px;
   text-align: left;
+  left: 156px;
+  height: 312px;
 }
 
 footer a.logo-footer {
@@ -307,6 +384,7 @@ footer a.logo-footer {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 18px;
+  padding-left: 156px;
   text-align: left;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -330,7 +408,9 @@ footer a.logo-footer {
 }
 
 .footer-p {
+  max-width: 600px;
   line-height: 1.5;
+  padding-left: 156px;
   text-align: left;
   color: #f4f4fd;
   letter-spacing: 0.02em;
