@@ -403,6 +403,8 @@ footer a.logo-footer {
   font-size: 18px;
   line-height: 21px;
   text-align: left;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer .web {
