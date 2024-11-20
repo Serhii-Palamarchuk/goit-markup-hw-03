@@ -327,9 +327,10 @@ header .contacts ul li {
 }
 
 .portfolio {
-  padding: 60px 20px 40px 20px;
   text-align: left;
   background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-h {
@@ -341,14 +342,19 @@ header .contacts ul li {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
-.portfolio ul {
+.portfolio-ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio li {
@@ -448,12 +454,10 @@ button {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
-  border: 0;
   padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  margin: -1px;
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
