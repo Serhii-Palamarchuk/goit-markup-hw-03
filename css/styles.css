@@ -131,6 +131,7 @@ address ul a:focus {
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
+  padding: 24px 0;
 }
 
 header .contacts ul li {
