@@ -37,7 +37,7 @@ ul {
   border-bottom: 1px solid #e7e9fc;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   gap: 40px;
