@@ -20,7 +20,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  
+
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -406,6 +406,12 @@ header .contacts ul li {
   padding: 100px 0;
 }
 
+.footer-div {
+  display: flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
 footer a.logo-footer {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -417,6 +423,8 @@ footer a.logo-footer {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
