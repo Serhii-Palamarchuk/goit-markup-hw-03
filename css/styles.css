@@ -357,14 +357,16 @@ header .contacts ul li {
   row-gap: 48px;
 }
 
-.portfolio-li {
+.portfolio-li:first-child {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio li {
+.portfolio-li {
+  width: 360px;
   height: 420px;
   display: flex;
   flex-direction: column;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-li-div {
