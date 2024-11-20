@@ -276,6 +276,7 @@ header .contacts ul li {
 .team-ul {
   display: flex;
   justify-content: center;
+  gap: 24px;
   column-gap: 24px;
   row-gap: 48px;
   padding: 0;
