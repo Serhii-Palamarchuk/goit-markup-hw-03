@@ -73,8 +73,7 @@ img {
   text-transform: uppercase;
   margin-right: 76px;
 }
-.studio-link
-{
+.studio-link {
   padding: 24px 0;
 }
 .studio-link:hover,
@@ -363,7 +362,6 @@ header .contacts ul li {
 
 .portfolio-li {
   width: 360px;
-  height: 420px;
   display: flex;
   flex-direction: column;
   width: calc((100% - 48px) / 3);
@@ -395,7 +393,7 @@ header .contacts ul li {
 }
 
 .portfolio-p {
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   color: #434455;
   margin-top: 0;
@@ -425,8 +423,8 @@ header .contacts ul li {
 
 .footer-div {
   display: flex;
-  justify-content:flex-start;
-  align-items:flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .footer-a {
