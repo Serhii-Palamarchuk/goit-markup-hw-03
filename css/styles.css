@@ -48,6 +48,10 @@ nav {
   align-items: center;
 }
 
+.header-nav-ul {
+  display: flex;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -64,7 +68,10 @@ img {
   text-transform: uppercase;
   margin-right: 76px;
 }
-
+.studio-link
+{
+  padding: 24px 0;
+}
 .studio-link:hover,
 .studio-link:focus {
   color: #404bbf;
@@ -131,7 +138,6 @@ address ul a:focus {
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
-  padding: 24px 0;
 }
 
 header .contacts ul li {
