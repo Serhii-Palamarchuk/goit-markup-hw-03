@@ -20,6 +20,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 }
 
 .header-main {
