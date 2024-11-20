@@ -20,26 +20,47 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
+  height: 100%;
+}
 
+.container-extra {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 }
 
+.header-container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-main {
   background-color: #ffffff;
   height: 72px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 156px;
+  border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav {
@@ -55,6 +76,19 @@ nav {
 
 .header-nav-ul {
   display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 img {
@@ -67,12 +101,11 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #4d5ae5;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  color: #4d5ae5;
+  text-decoration: none;
 }
+
 .studio-link {
   padding: 24px 0;
 }
@@ -120,9 +153,7 @@ address ul a:focus {
 
 .contacts {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-style: normal;
+  gap: 20px;
 }
 
 .contacts-ul {
@@ -139,9 +170,7 @@ address ul a:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   text-decoration: none;
-  font-style: normal;
 }
 
 header .contacts ul li {
@@ -435,6 +464,8 @@ header .contacts ul li {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: column;
+  margin: 0;
 }
 
 .footer-a {
