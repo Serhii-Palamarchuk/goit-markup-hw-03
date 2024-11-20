@@ -13,11 +13,20 @@ ul {
   list-style: none;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Header Styles */
 header {
   background-color: #ffffff;
   height: 72px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0 156px;
@@ -89,14 +98,14 @@ address ul a:focus {
   color: #404bbf; /* Колір при наведенні або фокусі */
 }
 
-header .contacts {
+.contacts {
   display: flex;
   align-items: center; /* Вирівнює по вертикалі */
   justify-content: flex-end; /* Вирівнює елементи по правому краю */
   font-style: normal;
 }
 
-header .contacts ul {
+.contacts ul {
   display: flex;
   gap: 20px; /* Відступ між контактами */
   list-style: none;
