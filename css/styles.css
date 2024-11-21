@@ -2,6 +2,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 /* Відміна дефолтного підкреслення для посилань та маркерів у списках */
 a {
   text-decoration: none;
@@ -45,7 +55,6 @@ ul {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .header-right {
@@ -57,7 +66,6 @@ ul {
 nav {
   display: flex;
   align-items: center;
-  gap: 40px;
   font-size: 0;
 }
 
@@ -171,7 +179,6 @@ address ul a:focus {
 
 header .contacts ul li {
   display: inline;
-  margin-right: 10px;
 }
 
 /* Hero Section Styles */
@@ -322,7 +329,6 @@ header .contacts ul li {
   width: 264px;
   height: 260px;
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -403,8 +409,6 @@ header .contacts ul li {
   font-size: 20px;
   margin-bottom: 8px;
   color: #2e2f42;
-  padding-left: 20px;
-  padding-top: 15px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
@@ -414,7 +418,6 @@ header .contacts ul li {
   font-weight: 500;
   color: #434455;
   margin-top: 0;
-  padding-left: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
