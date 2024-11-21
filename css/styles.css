@@ -9,7 +9,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  -margin: 0;
 }
 
 /* Відміна дефолтного підкреслення для посилань та маркерів у списках */
@@ -197,6 +197,7 @@ header .contacts ul li {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
+  margin: 46.48px auto;
 }
 
 .hero-button {
