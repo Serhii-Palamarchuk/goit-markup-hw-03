@@ -327,7 +327,6 @@ header .contacts ul li {
 }
 
 .team img {
-  width: 264px;
   height: 260px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -428,7 +427,6 @@ header .contacts ul li {
 }
 
 .portfolio img {
-  width: 360px;
   height: 300px;
 }
 
